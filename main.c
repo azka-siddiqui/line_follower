@@ -46,8 +46,7 @@ void flashSignal(int);
 
 // MAIN PROGRAM //
 
-void main(void)
-{
+void main(void) {
 	init_hardware();            //run procedure init_hardware()
 
     while(RA0 == 0);
