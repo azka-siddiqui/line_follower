@@ -252,7 +252,7 @@ void sharpTurnRight(void)
 	stop();
 }
 
-// FLASH ROBOT LIGHT //
+// FLASH LIGHT //
 
 void flashSignal (int count)
 {
@@ -278,8 +278,6 @@ void flashSignal (int count)
 	rightSensor = ADRESH;
 }
 
-// ARM DOWN //
-
 void sharpTurnLeft(void)
 {
 	forward();
@@ -292,7 +290,7 @@ void sharpTurnLeft(void)
 		readSensors();
 		if(rightSensor<=RIGHT_THRESHOLD)
 			num++;
-	} while(rightSensor <=RIGHT_THRESHOLD/*&&num==2&&counter!=2*/);
+	} while(rightSensor <=RIGHT_THRESHOLD);
 	
 	
 	spinRight();
