@@ -297,3 +297,13 @@ void sharpTurnLeft(void)
 	_delay(100000);
 	stop();
 }
+
+void square(void){
+
+	for (int i = 0; i < 5; i++){//completes square, then does 180 degree rotation before starting again
+		forward();
+		_delay(1000000);
+		left();
+		_delay(1000000);
+	}
+}
